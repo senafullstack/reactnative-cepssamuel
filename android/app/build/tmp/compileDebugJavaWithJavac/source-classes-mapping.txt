@@ -1,0 +1,17 @@
+com/swsagenciadigital/nossocantinho/MainApplication.java
+ com.swsagenciadigital.nossocantinho.MainApplication
+ com.swsagenciadigital.nossocantinho.MainApplication$1
+com/swsagenciadigital/nossocantinho/generated/BasePackageList.java
+ com.swsagenciadigital.nossocantinho.generated.BasePackageList
+com/swsagenciadigital/nossocantinho/BuildConfig.java
+ com.swsagenciadigital.nossocantinho.BuildConfig
+com/swsagenciadigital/nossocantinho/ReactNativeFlipper.java
+ com.swsagenciadigital.nossocantinho.ReactNativeFlipper
+ com.swsagenciadigital.nossocantinho.ReactNativeFlipper$1
+ com.swsagenciadigital.nossocantinho.ReactNativeFlipper$2
+ com.swsagenciadigital.nossocantinho.ReactNativeFlipper$2$1
+com/swsagenciadigital/nossocantinho/MainActivity.java
+ com.swsagenciadigital.nossocantinho.MainActivity
+ com.swsagenciadigital.nossocantinho.MainActivity$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList

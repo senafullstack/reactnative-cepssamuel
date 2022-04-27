@@ -1,0 +1,214 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.swsagenciadigital.nossocantinho"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:6:3-75
+11-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:6:20-73
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:2:3-64
+12-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:2:20-62
+13    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+13-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:3:3-77
+13-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:3:20-75
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:4:3-77
+14-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:4:20-75
+15    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+15-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:5:3-68
+15-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:5:20-66
+16    <uses-permission android:name="android.permission.VIBRATE" />
+16-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:7:3-63
+16-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:7:20-61
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:8:3-78
+17-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:8:20-76
+18    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+18-->[com.facebook.flipper:flipper:0.54.0] C:\Users\Israel\.gradle\caches\transforms-3\7ced98fae9ea2b5aa64e54aefef0d400\transformed\jetified-flipper-0.54.0\AndroidManifest.xml:16:5-76
+18-->[com.facebook.flipper:flipper:0.54.0] C:\Users\Israel\.gradle\caches\transforms-3\7ced98fae9ea2b5aa64e54aefef0d400\transformed\jetified-flipper-0.54.0\AndroidManifest.xml:16:22-73
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->[:expo-updates] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\expo-updates\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-79
+19-->[:expo-updates] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\expo-updates\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-76
+20
+21    <queries>
+21-->[:expo-file-system] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-22:15
+22
+23        <!-- Query open documents -->
+24        <intent>
+24-->[:expo-file-system] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-21:18
+25            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+25-->[:expo-file-system] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-79
+25-->[:expo-file-system] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:21-76
+26        </intent>
+27        <intent>
+27-->[:expo-web-browser] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\expo-web-browser\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-16:18
+28
+29            <!-- Required for opening tabs if targeting API 30 -->
+30            <action android:name="android.support.customtabs.action.CustomTabsService" />
+30-->[:expo-web-browser] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\expo-web-browser\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-90
+30-->[:expo-web-browser] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\expo-web-browser\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:21-87
+31        </intent>
+32    </queries>
+33
+34    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+34-->[com.android.installreferrer:installreferrer:1.0] C:\Users\Israel\.gradle\caches\transforms-3\7b754e4656eb7f2d169b29646fb4b442\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:5-110
+34-->[com.android.installreferrer:installreferrer:1.0] C:\Users\Israel\.gradle\caches\transforms-3\7b754e4656eb7f2d169b29646fb4b442\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:22-107
+35
+36    <application
+36-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:9:3-29:17
+37        android:name="com.swsagenciadigital.nossocantinho.MainApplication"
+37-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:9:16-47
+38        android:allowBackup="true"
+38-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:9:162-188
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.3.0] C:\Users\Israel\.gradle\caches\transforms-3\fe3cf0882eb40046447bd9893532f7c5\transformed\core-1.3.0\AndroidManifest.xml:24:18-86
+40        android:debuggable="true"
+41        android:icon="@mipmap/ic_launcher"
+41-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:9:81-115
+42        android:label="@string/app_name"
+42-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:9:48-80
+43        android:roundIcon="@mipmap/ic_launcher_round"
+43-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:9:116-161
+44        android:theme="@style/AppTheme"
+44-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:9:189-220
+45        android:usesCleartextTraffic="true" >
+45-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:9:221-256
+46        <meta-data
+46-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:10:5-82
+47            android:name="expo.modules.updates.ENABLED"
+47-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:10:16-59
+48            android:value="true" />
+48-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:10:60-80
+49        <meta-data
+49-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:11:5-93
+50            android:name="expo.modules.updates.EXPO_SDK_VERSION"
+50-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:11:16-68
+51            android:value="42.0.0" />
+51-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:11:69-91
+52        <meta-data
+52-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:12:5-105
+53            android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH"
+53-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:12:16-80
+54            android:value="ALWAYS" />
+54-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:12:81-103
+55        <meta-data
+55-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:13:5-99
+56            android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS"
+56-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:13:16-79
+57            android:value="0" />
+57-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:13:80-97
+58        <meta-data
+58-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:14:5-134
+59            android:name="expo.modules.updates.EXPO_UPDATE_URL"
+59-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:14:16-67
+60            android:value="https://exp.host/@senadeveloper/appnossocantinho" />
+60-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:14:68-132
+61
+62        <activity
+62-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:15:5-27:16
+63            android:name="com.swsagenciadigital.nossocantinho.MainActivity"
+63-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:15:15-43
+64            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+64-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:15:77-154
+65            android:label="@string/app_name"
+65-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:15:44-76
+66            android:launchMode="singleTask"
+66-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:15:155-186
+67            android:screenOrientation="portrait"
+67-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:15:276-312
+68            android:theme="@style/Theme.App.SplashScreen"
+68-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:15:230-275
+69            android:windowSoftInputMode="adjustResize" >
+69-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:15:187-229
+70            <intent-filter>
+70-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:16:7-19:23
+71                <action android:name="android.intent.action.MAIN" />
+71-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:17:9-60
+71-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:17:17-58
+72
+73                <category android:name="android.intent.category.LAUNCHER" />
+73-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:18:9-68
+73-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:18:19-66
+74            </intent-filter>
+75            <intent-filter>
+75-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:20:7-26:23
+76                <action android:name="android.intent.action.VIEW" />
+76-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:21:9-60
+76-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:21:17-58
+77
+78                <category android:name="android.intent.category.DEFAULT" />
+78-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:22:9-67
+78-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:22:19-65
+79                <category android:name="android.intent.category.BROWSABLE" />
+79-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:23:9-69
+79-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:23:19-67
+80
+81                <data android:scheme="myapp" />
+81-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:24:9-39
+81-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:24:15-37
+82                <data android:scheme="com.swsagenciadigital.nossocantinho" />
+82-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:24:9-39
+82-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:24:15-37
+83            </intent-filter>
+84        </activity>
+85        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+85-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:28:5-81
+85-->C:\xampp\htdocs\nossocantinho\Appcolegio\android\app\src\main\AndroidManifest.xml:28:15-79
+86
+87        <meta-data
+87-->[:unimodules-react-native-adapter] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-14:91
+88            android:name="org.unimodules.core.AppLoader#react-native-headless"
+88-->[:unimodules-react-native-adapter] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-79
+89            android:value="org.unimodules.adapters.react.apploader.RNHeadlessAppLoader" />
+89-->[:unimodules-react-native-adapter] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-88
+90
+91        <provider
+91-->[:react-native-webview] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
+92            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+92-->[:react-native-webview] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-83
+93            android:authorities="com.swsagenciadigital.nossocantinho.fileprovider"
+93-->[:react-native-webview] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-64
+94            android:exported="false"
+94-->[:react-native-webview] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+95            android:grantUriPermissions="true" >
+95-->[:react-native-webview] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
+96            <meta-data
+96-->[:react-native-webview] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:63
+97                android:name="android.support.FILE_PROVIDER_PATHS"
+97-->[:react-native-webview] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
+98                android:resource="@xml/file_provider_paths" />
+98-->[:react-native-webview] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-60
+99        </provider>
+100        <provider
+100-->[:expo-file-system] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:9-34:20
+101            android:name="expo.modules.filesystem.FileSystemFileProvider"
+101-->[:expo-file-system] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-74
+102            android:authorities="com.swsagenciadigital.nossocantinho.FileSystemFileProvider"
+102-->[:expo-file-system] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-74
+103            android:exported="false"
+103-->[:expo-file-system] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-37
+104            android:grantUriPermissions="true" >
+104-->[:expo-file-system] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-47
+105            <meta-data
+105-->[:react-native-webview] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:63
+106                android:name="android.support.FILE_PROVIDER_PATHS"
+106-->[:react-native-webview] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
+107                android:resource="@xml/file_system_provider_paths" />
+107-->[:react-native-webview] C:\xampp\htdocs\nossocantinho\Appcolegio\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-60
+108        </provider>
+109
+110        <service
+110-->[androidx.room:room-runtime:2.1.0] C:\Users\Israel\.gradle\caches\transforms-3\3b5db4b3b22ae452a34a6490900f58b2\transformed\room-runtime-2.1.0\AndroidManifest.xml:25:9-27:40
+111            android:name="androidx.room.MultiInstanceInvalidationService"
+111-->[androidx.room:room-runtime:2.1.0] C:\Users\Israel\.gradle\caches\transforms-3\3b5db4b3b22ae452a34a6490900f58b2\transformed\room-runtime-2.1.0\AndroidManifest.xml:26:13-74
+112            android:exported="false" />
+112-->[androidx.room:room-runtime:2.1.0] C:\Users\Israel\.gradle\caches\transforms-3\3b5db4b3b22ae452a34a6490900f58b2\transformed\room-runtime-2.1.0\AndroidManifest.xml:27:13-37
+113    </application>
+114
+115</manifest>
