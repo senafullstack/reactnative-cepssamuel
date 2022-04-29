@@ -49,8 +49,8 @@ export default ({ navigation, titulo }) => {
 
   return (
     <SafeAreaView style={styles.container}>
+      <MenuHeaderExterno navigation={navigation} titulo={"Galeria"} />
       <ScrollView>
-        <MenuHeaderExterno navigation={navigation} titulo={"Galeria"} />
         <View
           style={{
             flexDirection: "column",

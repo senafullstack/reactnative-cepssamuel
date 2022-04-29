@@ -74,98 +74,104 @@ export default ({ navigation, titulo }) => {
   }
 
   return (
-    <ScrollView>
+    <>
       <MenuHeaderExterno
         navigation={navigation}
         titulo={"Entre em contato conosco"}
       />
-      <View
-        style={{
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Card containerStyle={{ width: "90%", borderRadius: 10 }}>
-          <Card.Divider />
-          <Input
-            onChangeText={(texto) => {
-              setNome(texto);
-            }}
-            style={{ color: "#F38DAD" }}
-            value={nome}
-            placeholder="Nome"
-            placeholderTextColor="#F38DAD"
-            leftIcon={{ type: "font-awesome", name: "user", color: "#F38DAD" }}
-          />
-          <Input
-            onChangeText={(texto) => {
-              setEmail(texto);
-            }}
-            style={{ color: "#F38DAD" }}
-            value={email}
-            placeholder="Email"
-            placeholderTextColor="#F38DAD"
-            leftIcon={{
-              type: "font-awesome",
-              name: "envelope",
-              color: "#F38DAD",
-            }}
-          />
-
-          <MaskedTextInput
-            mask="(79)99999-9999"
-            onChangeText={(texto) => {
-              setFone(texto);
-            }}
-            style={styles.input}
-            placeholder="Whatsapp/Telefone para contato"
-            keyboardType="numeric"
-            placeholderTextColor="#fff"
-            value={fone}
-          />
-          <Input
-            onChangeText={(texto) => {
-              setMensagem(texto);
-            }}
-            multiline
-            style={styles.inputtextarea}
-            value={mensagem}
-            placeholder="Envie sua mensagem"
-            placeholderTextColor="#F38DAD"
-            editable
-            numberOfLines={5}
-          />
-          <Button
-            buttonStyle={{ backgroundColor: "#5BA3D9" }}
-            onPress={() => enviarmensagem()}
-            icon={<Icon name="arrow-right" size={18} color="white" />}
-            title="Enviar Mensagem"
-          />
-          {temerro ? (
-            <View
-              style={{
-                width: "100%",
-                height: 15,
-                alignContent: "center",
-                alignItems: "center",
+      <ScrollView>
+        <View
+          style={{
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Card containerStyle={{ width: "90%", borderRadius: 10 }}>
+            <Card.Divider />
+            <Input
+              onChangeText={(texto) => {
+                setNome(texto);
               }}
-            >
-              <Text
+              style={{ color: "#F38DAD" }}
+              value={nome}
+              placeholder="Nome"
+              placeholderTextColor="#F38DAD"
+              leftIcon={{
+                type: "font-awesome",
+                name: "user",
+                color: "#F38DAD",
+              }}
+            />
+            <Input
+              onChangeText={(texto) => {
+                setEmail(texto);
+              }}
+              style={{ color: "#F38DAD" }}
+              value={email}
+              placeholder="Email"
+              placeholderTextColor="#F38DAD"
+              leftIcon={{
+                type: "font-awesome",
+                name: "envelope",
+                color: "#F38DAD",
+              }}
+            />
+
+            <MaskedTextInput
+              mask="(79)99999-9999"
+              onChangeText={(texto) => {
+                setFone(texto);
+              }}
+              style={styles.input}
+              placeholder="Whatsapp/Telefone para contato"
+              keyboardType="numeric"
+              placeholderTextColor="#fff"
+              value={fone}
+            />
+            <Input
+              onChangeText={(texto) => {
+                setMensagem(texto);
+              }}
+              multiline
+              style={styles.inputtextarea}
+              value={mensagem}
+              placeholder="Envie sua mensagem"
+              placeholderTextColor="#F38DAD"
+              editable
+              numberOfLines={5}
+            />
+            <Button
+              buttonStyle={{ backgroundColor: "#5BA3D9" }}
+              onPress={() => enviarmensagem()}
+              icon={<Icon name="arrow-right" size={18} color="white" />}
+              title="Enviar Mensagem"
+            />
+            {temerro ? (
+              <View
                 style={{
-                  fontSize: 20,
-                  color: "red",
+                  width: "100%",
+                  height: 15,
+                  alignContent: "center",
+                  alignItems: "center",
                 }}
               >
-                {mensagem}
-              </Text>
-            </View>
-          ) : (
-            <View></View>
-          )}
-        </Card>
-      </View>
-    </ScrollView>
+                <Text
+                  style={{
+                    fontSize: 20,
+                    color: "red",
+                  }}
+                >
+                  {mensagem}
+                </Text>
+              </View>
+            ) : (
+              <View></View>
+            )}
+          </Card>
+        </View>
+      </ScrollView>
+    </>
   );
 };
 

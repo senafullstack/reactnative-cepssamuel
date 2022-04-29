@@ -54,67 +54,68 @@ export default ({ route, navigation, titulo }) => {
       });
   }
   return (
-    <ScrollView style={styles.scrollView}>
+    <>
       <MenuHeaderExterno
         navigation={navigation}
         titulo={"Estrutura Pedagógica"}
       />
+      <ScrollView style={styles.scrollView}>
+        <Card containerStyle={{ width: "95%", borderRadius: 10 }}>
+          <Card.Title style={{ color: "#43C1C4" }}>
+            <TouchableOpacity onPress={() => navigation.navigate("PageHome")}>
+              <Icon
+                name="arrow-left"
+                style={{ color: "#F38DAD", fontSize: 22 }}
+              />
+            </TouchableOpacity>
+          </Card.Title>
+          <Card.Divider />
 
-      <Card containerStyle={{ width: "95%", borderRadius: 10 }}>
-        <Card.Title style={{ color: "#43C1C4" }}>
-          <TouchableOpacity onPress={() => navigation.navigate("PageHome")}>
-            <Icon
-              name="arrow-left"
-              style={{ color: "#F38DAD", fontSize: 22 }}
-            />
-          </TouchableOpacity>
-        </Card.Title>
-        <Card.Divider />
-
-        <View
-          style={{
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          {carregando ? (
-            <View
-              style={{
-                width: Globais.percentuallargura(85),
-                height: Globais.percentualaltura(85),
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <ActivityIndicator size="large" animating={true} />
-            </View>
-          ) : (
-            dados.map((item, index) => (
+          <View
+            style={{
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            {carregando ? (
               <View
-                style={{ width: "100%", flexDirection: "row" }}
-                key={item.id_estruturapedagogica}
+                style={{
+                  width: Globais.percentuallargura(85),
+                  height: Globais.percentualaltura(85),
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
               >
-                <View style={{ margin: 2, justifyContent: "center" }}>
-                  <Text style={styles.titulo}>{item.dataformatada}</Text>
-                  <Text style={styles.titulo}>{item.disciplina}</Text>
-                  <RenderHTML
-                    contentWidth={Globais.percentuallargura(85)}
-                    source={{
-                      html:
-                        item.texto != ""
-                          ? "<span>" + item.texto + "</span>"
-                          : "<b>aguarde</b>",
-                    }}
-                  />
-                </View>
-                <Card.Divider />
+                <ActivityIndicator size="large" animating={true} />
               </View>
-            ))
-          )}
-        </View>
-      </Card>
-    </ScrollView>
+            ) : (
+              dados.map((item, index) => (
+                <View
+                  style={{ width: "100%", flexDirection: "row" }}
+                  key={item.id_estruturapedagogica}
+                >
+                  <View style={{ margin: 2, justifyContent: "center" }}>
+                    <Text style={styles.titulo}>{item.dataformatada}</Text>
+                    <Text style={styles.titulo}>{item.disciplina}</Text>
+                    <RenderHTML
+                      contentWidth={Globais.percentuallargura(85)}
+                      source={{
+                        html:
+                          item.texto != ""
+                            ? "<span>" + item.texto + "</span>"
+                            : "<b>aguarde</b>",
+                      }}
+                    />
+                  </View>
+                  <Card.Divider />
+                </View>
+              ))
+            )}
+          </View>
+        </Card>
+      </ScrollView>
+    </>
   );
 };
 const styles = StyleSheet.create({

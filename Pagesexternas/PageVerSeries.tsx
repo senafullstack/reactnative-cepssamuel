@@ -57,65 +57,66 @@ export default ({ route, navigation, titulo }) => {
       });
   }
   return (
-    <ScrollView style={styles.scrollView}>
+    <>
       <MenuHeaderExterno
         navigation={navigation}
         titulo={informacoes.descricao}
       />
+      <ScrollView style={styles.scrollView}>
+        <Card containerStyle={{ width: "95%", borderRadius: 10 }}>
+          <Card.Title style={{ color: "#43C1C4" }}>
+            <TouchableOpacity onPress={() => navigation.navigate("PageHome")}>
+              <Icon
+                name="arrow-left"
+                style={{ color: "#F38DAD", fontSize: 22 }}
+              />
+            </TouchableOpacity>
+          </Card.Title>
+          <Card.Divider />
 
-      <Card containerStyle={{ width: "95%", borderRadius: 10 }}>
-        <Card.Title style={{ color: "#43C1C4" }}>
-          <TouchableOpacity onPress={() => navigation.navigate("PageHome")}>
-            <Icon
-              name="arrow-left"
-              style={{ color: "#F38DAD", fontSize: 22 }}
-            />
-          </TouchableOpacity>
-        </Card.Title>
-        <Card.Divider />
-
-        <View
-          style={{
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          {carregando ? (
-            <View
-              style={{
-                width: Globais.percentuallargura(85),
-                height: Globais.percentualaltura(85),
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <ActivityIndicator size="large" animating={true} />
-            </View>
-          ) : (
-            dados.map((item, index) => (
-              <TouchableOpacity
-                onPress={() => {
-                  navigation.navigate("PageVerAgendaDiaria", {
-                    informacoes: item,
-                  });
+          <View
+            style={{
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            {carregando ? (
+              <View
+                style={{
+                  width: Globais.percentuallargura(85),
+                  height: Globais.percentualaltura(85),
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
-                key={item.ordem}
               >
-                <View style={{ width: "100%", flexDirection: "row" }}>
-                  <View style={{ margin: 2, justifyContent: "center" }}>
-                    <Text style={styles.titulo}>
-                      {item.serie} - {item.nome}
-                    </Text>
+                <ActivityIndicator size="large" animating={true} />
+              </View>
+            ) : (
+              dados.map((item, index) => (
+                <TouchableOpacity
+                  onPress={() => {
+                    navigation.navigate("PageVerAgendaDiaria", {
+                      informacoes: item,
+                    });
+                  }}
+                  key={item.ordem}
+                >
+                  <View style={{ width: "100%", flexDirection: "row" }}>
+                    <View style={{ margin: 2, justifyContent: "center" }}>
+                      <Text style={styles.titulo}>
+                        {item.serie} - {item.nome}
+                      </Text>
+                    </View>
                   </View>
-                </View>
-                <Card.Divider />
-              </TouchableOpacity>
-            ))
-          )}
-        </View>
-      </Card>
-    </ScrollView>
+                  <Card.Divider />
+                </TouchableOpacity>
+              ))
+            )}
+          </View>
+        </Card>
+      </ScrollView>
+    </>
   );
 };
 const styles = StyleSheet.create({

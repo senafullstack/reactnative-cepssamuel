@@ -45,62 +45,64 @@ export default ({ navigation, titulo }) => {
   }
 
   return (
-    <ScrollView style={styles.scrollView}>
+    <>
       <MenuHeaderExterno navigation={navigation} titulo={"Agenda Diária"} />
-      <View
-        style={{
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Card containerStyle={{ width: "95%", borderRadius: 10 }}>
-          <Card.Title style={{ color: "#43C1C4" }}>
-            <TouchableOpacity
-              onPress={() => navigation.navigate("TabHomeexterna")}
-            >
-              <Icon
-                name="arrow-left"
-                style={{ color: "#F38DAD", fontSize: 22 }}
-              />
-            </TouchableOpacity>
-          </Card.Title>
-          <Card.Divider />
-          <Card.Divider />
-
-          {carregando ? (
-            <View
-              style={{
-                width: Globais.percentuallargura(85),
-                height: Globais.percentualaltura(85),
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <ActivityIndicator size="large" animating={true} />
-            </View>
-          ) : (
-            dados.map((item, index) => (
+      <ScrollView style={styles.scrollView}>
+        <View
+          style={{
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Card containerStyle={{ width: "95%", borderRadius: 10 }}>
+            <Card.Title style={{ color: "#43C1C4" }}>
               <TouchableOpacity
-                onPress={() => {
-                  navigation.navigate("PageVerseries", {
-                    informacoes: item,
-                  });
-                }}
-                key={item.id_curso}
+                onPress={() => navigation.navigate("TabHomeexterna")}
               >
-                <View style={{ width: "100%", flexDirection: "row" }}>
-                  <View style={{ margin: 2, justifyContent: "center" }}>
-                    <Text style={styles.titulo}>{item.descricao}</Text>
-                  </View>
-                </View>
-                <Card.Divider />
+                <Icon
+                  name="arrow-left"
+                  style={{ color: "#F38DAD", fontSize: 22 }}
+                />
               </TouchableOpacity>
-            ))
-          )}
-        </Card>
-      </View>
-    </ScrollView>
+            </Card.Title>
+            <Card.Divider />
+            <Card.Divider />
+
+            {carregando ? (
+              <View
+                style={{
+                  width: Globais.percentuallargura(85),
+                  height: Globais.percentualaltura(85),
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <ActivityIndicator size="large" animating={true} />
+              </View>
+            ) : (
+              dados.map((item, index) => (
+                <TouchableOpacity
+                  onPress={() => {
+                    navigation.navigate("PageVerseries", {
+                      informacoes: item,
+                    });
+                  }}
+                  key={item.id_curso}
+                >
+                  <View style={{ width: "100%", flexDirection: "row" }}>
+                    <View style={{ margin: 2, justifyContent: "center" }}>
+                      <Text style={styles.titulo}>{item.descricao}</Text>
+                    </View>
+                  </View>
+                  <Card.Divider />
+                </TouchableOpacity>
+              ))
+            )}
+          </Card>
+        </View>
+      </ScrollView>
+    </>
   );
 };
 const styles = StyleSheet.create({
